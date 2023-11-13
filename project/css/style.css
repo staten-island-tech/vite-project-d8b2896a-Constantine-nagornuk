@@ -3,7 +3,7 @@
   --orange:#ff7730;
   --primary: var(var(--orange))
 }
-body{
+.body{
   background-color: var(--primary);
 }
 .light{
