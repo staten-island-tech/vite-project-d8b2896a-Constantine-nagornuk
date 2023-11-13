@@ -1,0 +1,29 @@
+:root{
+  --blue:#1372ca;
+  --orange:#ff7730;
+  --primary: var(var(--orange))
+}
+body{
+  background-color: var(--primary);
+}
+.light{
+  --primary: var(--orange)
+}
+.dark{
+
+  --primary: var(--blue)
+}
+
+.StoreTitle{
+  text-align: center;
+  font-size: 60px;
+}
+
+.TitleBlock{
+ border: 6px solid;
+  background-color: var(--blue);
+}
+
+.Cards{
+  background-color: #954;
+}
