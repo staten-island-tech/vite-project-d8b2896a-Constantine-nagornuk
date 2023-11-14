@@ -8,7 +8,13 @@ Cost: '10$',
 Picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GY0239J8-3b3UUV5FwWwydJSCti90Z9izgOhp3JJgjZ-c-UVZNeoKrtYYehroGltrNw&usqp=CAU',
 Type: 'Chips'
 },
-
+{
+    Name: 'Lays- Sour Cream and onionos',
+    Size:"Regular size",
+    Cost: '10$',
+    Picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GY0239J8-3b3UUV5FwWwydJSCti90Z9izgOhp3JJgjZ-c-UVZNeoKrtYYehroGltrNw&usqp=CAU',
+    Type: 'Chips'
+    },
 ]
 
 
