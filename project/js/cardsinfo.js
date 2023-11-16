@@ -31,7 +31,7 @@ Type: 'Chips'
             Type: 'Choclate'
             
             },
-            {
+          {
                 Name: 'Hershey Chocalte-Cookie and cream',
                 Size:"Regular size",
                 Cost: '3$',
@@ -45,36 +45,21 @@ Type: 'Chips'
 
 
 
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-const cardHTML = `
+cards.forEach((card) => {
+    let x = cards.Name.value
+    let y = cards.Picture.value
+    let z = cards.Cost.value
+    const cardHTML = `
         <div class="card">
-          <h2 class="Lego#">${}</h2>
-          <img class="Image" src="${}" alt="${}">
-          <p id="number_of_set">${}</p>
+          <h2 class="Name">${x}</h2>
+          <img class="Image" src="${y}" alt="${x}">
+          <p id="Cost">${z}</p>
           <button class="Delete">Delete</button>
         </div>
 `
-cards.forEach((card) => {
 
-}) */
+    
+
+}) 
