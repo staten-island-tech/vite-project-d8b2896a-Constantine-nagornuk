@@ -15,7 +15,7 @@ Type: 'Chips'
     Picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GY0239J8-3b3UUV5FwWwydJSCti90Z9izgOhp3JJgjZ-c-UVZNeoKrtYYehroGltrNw&usqp=CAU',
     Type: 'Chips'
     },
-    {
+{
         Name: 'Lays Barbecue',
         Size:"Regular size",
         Cost: '12$',
@@ -42,24 +42,3 @@ Type: 'Chips'
 ]
 
 
-
-
-
- 
-
-cards.forEach((card) => {
-    let x = cards.Name.value
-    let y = cards.Picture.value
-    let z = cards.Cost.value
-    const cardHTML = `
-        <div class="card">
-          <h2 class="Name">${x}</h2>
-          <img class="Image" src="${y}" alt="${x}">
-          <p id="Cost">${z}</p>
-          <button class="Delete">Delete</button>
-        </div>
-`
-
-    
-
-}) 
