@@ -6,7 +6,9 @@ const DOMselectors = {
     filterButton: document.getElementById("filterButton"),
     revertButton: document.getElementById("revertButton"),
     choc: document.getElementById("Choclate"),
-    chips: document.getElementById("Chips")
+    chips: document.getElementById("Chips"),
+    Theme2: document.getElementById("Theme2"),
+    Theme1: document.getElementById("Theme1")
     
 
 }
