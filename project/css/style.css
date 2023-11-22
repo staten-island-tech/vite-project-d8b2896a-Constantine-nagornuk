@@ -25,5 +25,31 @@
 }
 
 .Cards{
-  background-color: #954;
+  margin: 1rem , auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  background-color:rgb(48, 46, 196);
+  animation-name: poo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
+
+.Card {
+    width: 24%;
+    height: 28%;
+    background-color: rgba(211, 60, 18, 0.986);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+    flex-basis: 23%;
+   
+  }
+  .snackimg{
+    width: 50%;
+    height: 60%;
+  }

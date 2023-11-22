@@ -1,33 +1,114 @@
 import "../css/style.css";
-import"../js/cardsinfo"
+import cards from "../js/cardsinfo.js";
 
 const DOMselectors = {
-    box: document.getElementById("Cards")
+    box: document.getElementById("Cards"),
+    filterButton: document.getElementById("filterButton"),
+    revertButton: document.getElementById("revertButton"),
+    choc: document.getElementById("Choclate")
+    
+
+}
+
+cards.forEach((card) => {
+  let x = card.Name
+  let y = card.Size
+  let z = card.Cost
+  let g = card.Picture
+  let u = card.Type
+  const stuff = `
+  <div class="Card">
+        <h2>${x}</h2>
+        <p>${y}</p>
+        <img class="snackimg" src="${g}" alt="">
+        <p>type:${u}</p>
+        <p>${z}</p>
+      </div>`
+      DOMselectors.box.insertAdjacentHTML('beforeend', stuff);
+})
+
+
+
+
+
+DOMselectors.filterButton.addEventListener("click", filterBySize);
+
+function filterBySize() {
+  const filteredCards = cards.filter(card => card.Size === 'Large');
+  DOMselectors.box.innerHTML = '';
+
+  filteredCards.forEach((card) => {
+    let x = card.Name;
+    let y = card.Size;
+    let z = card.Cost;
+    let g = card.Picture;
+    let u = card.Type;
+
+    const cardHTML = `
+      <div class="Card">
+        <h2>${x}</h2>
+        <p>${y}</p>
+        <img class="snackimg" src="${g}" alt="">
+        <p>Type: ${u}</p>
+        <p>${z}</p>
+      </div>`;
+
+    DOMselectors.box.insertAdjacentHTML('beforeend', cardHTML);
+  });
 }
 
 
-console.log("test?")
- 
 
-cards.forEach((card) => {
-    let x = cards.Name.value
-    let y = cards.Picture.value
-    let z = cards.Cost.value
-    if (x &&  y && z) {
-        const cardHTML = `
-        <div class="card">
-          <h2 class="Name">${x}</h2>
-          <img class="Image" src="${y}" alt="${x}">
-          <p id="Cost">${z}</p>
-          <button class="Delete">Delete</button>
+
+DOMselectors.choc.addEventListener("click", filterBySize1);
+
+function filterBySize1() {
+  const filteredCards = cards.filter(card => card.Type === 'Choclate');
+  DOMselectors.box.innerHTML = '';
+
+  filteredCards.forEach((card) => {
+    let x = card.Name;
+    let y = card.Size;
+    let z = card.Cost;
+    let g = card.Picture;
+    let u = card.Type;
+
+    const cardHTML = `
+      <div class="Card">
+        <h2>${x}</h2>
+        <p>${y}</p>
+        <img class="snackimg" src="${g}" alt="">
+        <p>Type: ${u}</p>
+        <p>${z}</p>
+      </div>`;
+
+    DOMselectors.box.insertAdjacentHTML('beforeend', cardHTML);
+  });
+}
+
+
+
+DOMselectors.revertButton.addEventListener("click", revertToOriginal);
+
+function revertToOriginal() {
+  DOMselectors.box.innerHTML = '';
+
+  cards.forEach((card) => {
+    let x = card.Name
+    let y = card.Size
+    let z = card.Cost
+    let g = card.Picture
+    let u = card.Type
+    const stuff = `
+    <div class="Card">
+          <h2>${x}</h2>
+          <p>${y}</p>
+          <img class="snackimg" src="${g}" alt="">
+          <p>type:${u}</p>
+          <p>${z}</p>
         </div>`
-          console.log(card)
-        DOMselectors.box.insertAdjacentElement('beforeend' , cardHTML)
+        DOMselectors.box.insertAdjacentHTML('beforeend', stuff);
+  })
+}
 
-    }
-
-    
-
-
-}) 
 
