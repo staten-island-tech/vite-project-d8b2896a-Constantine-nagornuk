@@ -5,7 +5,8 @@ const DOMselectors = {
     box: document.getElementById("Cards"),
     filterButton: document.getElementById("filterButton"),
     revertButton: document.getElementById("revertButton"),
-    choc: document.getElementById("Choclate")
+    choc: document.getElementById("Choclate"),
+    chips: document.getElementById("Chips")
     
 
 }
@@ -63,10 +64,10 @@ function filterBySize() {
 DOMselectors.choc.addEventListener("click", filterBySize1);
 
 function filterBySize1() {
-  const filteredCards = cards.filter(card => card.Type === 'Choclate');
+  const filteredCards1 = cards.filter(card => card.Type === 'Choclate');
   DOMselectors.box.innerHTML = '';
 
-  filteredCards.forEach((card) => {
+  filteredCards1.forEach((card) => {
     let x = card.Name;
     let y = card.Size;
     let z = card.Cost;
@@ -112,3 +113,26 @@ function revertToOriginal() {
 }
 
 
+
+DOMselectors.chips.addEventListener("click", chips2);
+
+function chips2(){
+    const chipsfilter = cards.filter(card => card.Type === 'Chips');
+    DOMselectors.box.innerHTML = '';
+    chipsfilter.forEach((card) => {
+        let x = card.Name
+        let y = card.Size
+        let z = card.Cost
+        let g = card.Picture
+        let u = card.Type
+        const stuff = `
+        <div class="Card">
+              <h2>${x}</h2>
+              <p>${y}</p>
+              <img class="snackimg" src="${g}" alt="">
+              <p>type:${u}</p>
+              <p>${z}</p>
+            </div>`
+            DOMselectors.box.insertAdjacentHTML('beforeend', stuff);
+      })
+    }

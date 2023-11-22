@@ -39,6 +39,30 @@ Type: 'Chips'
                 Type: 'Choclate'
                 
                 },
+            {
+                    Name: 'Snicker',
+                    Size:"Regular size",
+                    Cost: '2.50$',
+                    Picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ546dM7nyBxEodtwv5MuwMOBbXoWKlRi61w&usqp=CAU',
+                    Type: 'Choclate'
+                    
+                    },
+                    {
+                        Name: 'Sun-Chips',
+                        Size:"Large",
+                        Cost: '5.50$',
+                        Picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQg4tiBReQCAeUclHoNPdN-lvlMpsrq_7Ebg&usqp=CAU',
+                        Type: 'Chips'
+                        
+                        },      
+                        {
+                            Name: 'MnM',
+                            Size:"Large",
+                            Cost: '1.50$',
+                            Picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2RygRnNyYAr2dFEarieVPykCPFKtgUaMXqQ&usqp=CAU',
+                            Type: 'Choclate'
+                            
+                            },            
 ]
 
 

@@ -22,6 +22,7 @@
 .TitleBlock{
  border: 6px solid;
   background-color: var(--blue);
+  margin-bottom: 20px;
 }
 
 .Cards{
@@ -52,4 +53,16 @@
   .snackimg{
     width: 50%;
     height: 60%;
+  }
+
+
+
+  .buttondiv{
+    background-color: #17a6df;
+    margin-bottom: 20px;
+  }
+
+  .Themes{
+    margin-bottom: 20px;
+    background-color: #30ff97;
   }
