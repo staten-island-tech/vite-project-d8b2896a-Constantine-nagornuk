@@ -8,7 +8,8 @@ const DOMselectors = {
     choc: document.getElementById("Choclate"),
     chips: document.getElementById("Chips"),
     Theme2: document.getElementById("Theme2"),
-    Theme1: document.getElementById("Theme1")
+    Theme1: document.getElementById("Theme1"),
+    Theme3: document.getElementById("Theme3")
     
 
 }
@@ -137,4 +138,31 @@ function chips2(){
             </div>`
             DOMselectors.box.insertAdjacentHTML('beforeend', stuff);
       })
+    }
+
+    DOMselectors.Theme1.addEventListener("click", change)
+
+    function change(){
+    if (document.body.classList.add("")){
+      document.body.classList.add("light")
+    }
+    else if (document.body.classList.add("dark")){
+
+
+    }
+    
+  
+    }
+
+
+    DOMselectors.Theme2.addEventListener("click" ,magic)
+    function magic(){
+      document.body
+    }
+
+
+    DOMselectors.Theme3.addEventListener("click" , poop )
+    function poop(){
+      document.body.classList.add
+
     }
