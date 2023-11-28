@@ -140,16 +140,18 @@ function chips2(){
       })
     }
 
+
+      function removethings(){
+        document.body.classList.remove("light")
+        document.body.classList.remove("dark")
+      }
+    
     DOMselectors.Theme1.addEventListener("click", change)
 
     function change(){
-    if (document.body.classList.add("")){
+      removethings()
       document.body.classList.add("light")
-    }
-    else if (document.body.classList.add("dark")){
-
-
-    }
+      
     
   
     }
@@ -157,12 +159,13 @@ function chips2(){
 
     DOMselectors.Theme2.addEventListener("click" ,magic)
     function magic(){
-      document.body
+      removethings()
+      document.body.classList.add("dark")
     }
 
 
     DOMselectors.Theme3.addEventListener("click" , poop )
     function poop(){
-      document.body.classList.add
+      removethings()
 
     }
